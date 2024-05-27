@@ -1,0 +1,8 @@
+First compile mydll.c to object code:
+
+gcc -c ips_ids.c
+Then, tell gcc that it is building a shared library:
+
+gcc -shared -o mydll.dll ips_ids.o
+
+gcc -fPIC -shared -o lib_ips.so ips_ids.c
